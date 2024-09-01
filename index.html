@@ -206,7 +206,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-08-27 09:43:24 / 修改时间：10:21:51" itemprop="dateCreated datePublished" datetime="2024-08-27T09:43:24+08:00">2024-08-27</time>
+              <time title="创建时间：2024-08-27 09:43:24 / 修改时间：15:46:58" itemprop="dateCreated datePublished" datetime="2024-08-27T09:43:24+08:00">2024-08-27</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -224,7 +224,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>150</span>
+              <span>183</span>
             </span>
 
         </div>
@@ -239,6 +239,7 @@
           <h1 id="设计技巧"><a href="#设计技巧" class="headerlink" title="设计技巧"></a>设计技巧</h1><p>1.垂直走线减小寄生电容</p>
 <p>2.PMOS可以用NGR环接衬底</p>
 <p>3.NMOS可以用PGR环接衬底</p>
+<p>4.由于GT与AA需要有一定距离，连接GT在一起时需要“浮光掠影”</p>
 <p>器件的组合与暂时取消组合</p>
 <p><img src="1.png" alt=""></p>
 <p><img src="2.png" alt=""></p>
@@ -301,7 +302,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-07-12 06:55:46" itemprop="dateModified" datetime="2024-07-12T06:55:46+08:00">2024-07-12</time>
+                <time title="修改时间：2024-09-01 13:21:57" itemprop="dateModified" datetime="2024-09-01T13:21:57+08:00">2024-09-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -319,7 +320,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>973</span>
+              <span>1.1k</span>
             </span>
 
         </div>
@@ -362,7 +363,8 @@
 <h5 id="5-如果出现下述内容，请设置Pin角，并且按下L给端口打上Label："><a href="#5-如果出现下述内容，请设置Pin角，并且按下L给端口打上Label：" class="headerlink" title="5.如果出现下述内容，请设置Pin角，并且按下L给端口打上Label："></a>5.如果出现下述内容，请设置Pin角，并且按下L给端口打上Label：</h5><p><img src="11.png" alt=""></p>
 <p>Pin角创建：</p>
 <p><img src="12.png" alt=""></p>
-<h1 id="五-PEX后仿参数提取与后仿"><a href="#五-PEX后仿参数提取与后仿" class="headerlink" title="五.PEX后仿参数提取与后仿"></a>五.PEX后仿参数提取与后仿</h1><h5 id="1-修改PEX-Rules"><a href="#1-修改PEX-Rules" class="headerlink" title="1.修改PEX Rules"></a>1.修改PEX Rules</h5><p><img src="13.png" alt=""></p>
+<h1 id="五-PEX后仿参数提取与后仿"><a href="#五-PEX后仿参数提取与后仿" class="headerlink" title="五.PEX后仿参数提取与后仿"></a>五.PEX后仿参数提取与后仿</h1><h5 id="1-修改PEX-Rules"><a href="#1-修改PEX-Rules" class="headerlink" title="1.修改PEX Rules"></a>1.修改PEX Rules</h5><p>如果找不到.pex文件(.rcx文件)，可以尝试用.lvs文件代替</p>
+<p><img src="13.png" alt=""></p>
 <h5 id="2-Inputs→Netlist修改"><a href="#2-Inputs→Netlist修改" class="headerlink" title="2.Inputs→Netlist修改"></a>2.Inputs→Netlist修改</h5><p><img src="14.png" alt=""></p>
 <h5 id="3-进行Outputs选项修改："><a href="#3-进行Outputs选项修改：" class="headerlink" title="3.进行Outputs选项修改："></a>3.进行Outputs选项修改：</h5><p><img src="15.png" alt=""></p>
 <h5 id="4-设置gnd"><a href="#4-设置gnd" class="headerlink" title="4.设置gnd"></a>4.设置gnd</h5><p><img src="16.png" alt=""></p>
@@ -377,6 +379,7 @@
 <p>第二种：在PEX的Rules加入两句话：</p>
 <p><img src="22.png" alt=""></p>
 <h5 id="10-创建一个Testbench，并在Setup→Environment中"><a href="#10-创建一个Testbench，并在Setup→Environment中" class="headerlink" title="10.创建一个Testbench，并在Setup→Environment中"></a>10.创建一个Testbench，并在Setup→Environment中</h5><p>Switch View List中插入一个calibre，如图所示即可，保存，正常进行仿真</p>
+<p>注：不能在与原电路同一个schematic里头进行仿真，一定要建立一个testbench!</p>
 <p><img src="23.png" alt=""></p>
 <h1 id="五-设计注意"><a href="#五-设计注意" class="headerlink" title="五.设计注意"></a>五.设计注意</h1><p>①layout请在schematic中打开，否则会出现端口不显示的情况</p>
 <p>②别忘了画衬底！！！</p>
